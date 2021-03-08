@@ -1,3 +1,7 @@
+"""
+this code predicts whether your skin can be tampered with, based on various weather parameters, by multiple linear regression.
+"""
+
 # adding libraries
 import numpy as np
 import pandas as pd
