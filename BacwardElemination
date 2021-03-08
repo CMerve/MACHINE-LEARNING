@@ -1,3 +1,7 @@
+"""
+backward elemination çoklu öğrenme algoritmalarında hangi parametrenin öğrenmede ne kadar etkili olduğunu öğrenmemize yarar. OLS Regression Results değerlerinde P değeri 0.05'in
+altında olması kabul edilebilir bir değerdir. bu kodda çoklu doğrusal regresyon ile eğittiğimiz modelde hangi parametre ne kadar değerli bu yöntem ile tespit edilmiştir.
+"""
 # adding libraries
 import numpy as np
 import pandas as pd
