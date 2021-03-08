@@ -1,3 +1,7 @@
+"""
+As this code data, it converts categorical data into numerical data to predict whether tennis can be played based on various weather parameters.
+"""
+
 # adding libraries
 import numpy as np
 import pandas as pd
