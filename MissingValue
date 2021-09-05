@@ -1,0 +1,20 @@
+#ön işleme / eksik verilerin tamamlanması
+#SimpleImputer kütüphanesi sadece sayısal verileri üzerinde çalışır
+#SimpleImputer sayısal değerlerin ortalamasını(strategy='mean') fit fonksiyonu ile alır(öğrenir de diyebiliriz) ve 
+#transform fonksiyonu ile de nan(missing_values=np.nan) değerlerin yerine doldurma işlemini yapar
+
+#preprocessing / complete to missing value
+#SimpleImputer just working on numerical data
+#It calculates the average(strategy='mean') to numerical data in the existing column with fit function(as learning) and
+#fill instead of nan value with transform function
+
+
+from sklearn. impute import SimpleImputer
+import pandas as pd
+veriler =pd.read_csv("veriler.csv")
+imputer=SimpleImputer(missing_values=np.nan,strategy'mean')
+yas=veriler.iloc[:,1:4].values
+print(yas)
+imputer=imputer.fit(yas[:,1:4])
+yas[:,1:4]=imputer.transform(yas[:,1:4])
+print(yas)
